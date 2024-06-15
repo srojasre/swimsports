@@ -118,6 +118,116 @@ nav ul li a {
     border-radius: 5px;
 }
 
+.product-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.thumbnail-container img {
+    width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.product-details h2, .product-details h3 {
+    margin: 0;
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+.color-options {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.color.white { background: white; }
+.color.blue { background: blue; }
+.color.black { background: black; }
+.color.red { background: red; }
+
+.size-options {
+    margin-bottom: 10px;
+}
+
+.size-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.qty-btn {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
+
+.add-to-cart-btn {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
 .popup {
     padding: 20px;
     background-color: #f9f9f9;
