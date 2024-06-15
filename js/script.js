@@ -1,26 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.getElementById("loginForm");
-    const loginError = document.getElementById("loginError");
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene que el formulario se envíe
 
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault();
+    // Obtener valores de los campos
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+    // Validar credenciales (esto es solo un ejemplo, deberías validar con tu base de datos)
+    var validUsername = 'usuario';
+    var validPassword = 'contraseña';
 
-        // Credential auth 
-        const validCredentials = {
-            username: "testuser",
-            password: "testpassword"
-        };
-
-        if (username === validCredentials.username && password === validCredentials.password) {
-            loginError.textContent = "Login successful!";
-            loginError.style.color = "green";
-            // Redirect to home page user is logged in
-        } else {
-            loginError.textContent = "Invalid username or password.";
-            loginError.style.color = "red";
-        }
-    });
+    if (username === validUsername && password === validPassword) {
+        alert('Usuario correcto');
+    } else {
+        alert('Usuario o contraseña incorrectos');
+    }
 });
+
