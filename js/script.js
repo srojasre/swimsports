@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        // Aquí se simula la validación de credenciales con datos ficticios.
+        // Credential auth 
         const validCredentials = {
             username: "testuser",
             password: "testpassword"
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (username === validCredentials.username && password === validCredentials.password) {
             loginError.textContent = "Login successful!";
             loginError.style.color = "green";
-            // Aquí puedes redirigir al usuario a otra página o realizar alguna otra acción.
+            // Redirect to home page user is logged in
         } else {
             loginError.textContent = "Invalid username or password.";
             loginError.style.color = "red";
