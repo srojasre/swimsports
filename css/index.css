@@ -151,15 +151,16 @@ nav ul li a {
 .image-grid img {
     width: 100%;
     height: auto;
-    animation: moveImage 2s ease-in-out infinite alternate;
+    animation: moveImage 5s ease-in-out infinite alternate;
 }
 
 @keyframes moveImage {
     0% {
-        transform: rotate(0);
+        transform: rotate(-45deg);
     }
+   
     100% {
-        transform: rotate(360deg);
+        transform: rotate(45deg);
     }
 }
 
@@ -168,6 +169,7 @@ nav ul li a {
     .header-container {
         flex-direction: column;
         align-items: center; 
+        font-size: large;
     }
 
     nav ul {
@@ -183,10 +185,12 @@ nav ul li a {
 
     .text-section, .image-grid, .buttons {
         width: 100%;
+        font-size: large;
     }
 
     .text-section {
         order: 1;
+        font-size: large;
     }
 
     .image-grid {
