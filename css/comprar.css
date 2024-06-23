@@ -166,6 +166,7 @@ nav ul li a {
     .main-content {
         flex-direction: column;
         align-items: center;
+        font-size: medium;
     }
 
     .text-section, .image-grid, .buttons {
@@ -188,5 +189,6 @@ nav ul li a {
         width: 100%;
         margin-top: 20px;
         justify-content: center; 
+        font-size: medium;
     }
 }
