@@ -181,17 +181,17 @@ nav ul li a {
     .main-content {
         flex-direction: column;
         align-items: center;
-        font-size: large;
+        font-size: medium;
     }
 
     .text-section, .image-grid, .buttons {
         width: 100%;
-        font-size: large;
+       
     }
 
     .text-section {
         order: 1;
-        font-size: medium;
+        
     }
 
     .image-grid {
