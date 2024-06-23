@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ceebfc;
+    background-color: #000000;
 }
 
 header {
-    background-color: #000668;
-    border-bottom: 1px solid #c2d6f3;
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
     padding: 20px 0;
 }
 
@@ -39,7 +39,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fafafa;
+    color: #04d9d9;
     font-weight: bold;
 }
 

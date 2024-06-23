@@ -8,6 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Validar credenciales (esto es solo un ejemplo, deberías validar con tu base de datos)
     var validUsername = 'usuario';
     var validPassword = 'contraseña';
+   
 
     if (username === validUsername && password === validPassword) {
         alert('Usuario correcto');
