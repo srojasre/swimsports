@@ -22,7 +22,6 @@ header {
     font-weight: bold;
 }
 
-
 .logo img {
     height: 50px;
 }
@@ -47,16 +46,16 @@ nav ul li a {
 
 .header-right {
     display: flex;
-    flex-direction: column; /* Disposición en columna */
-    align-items: center; /* Centrar el contenido horizontalmente */
-    text-align: center; /* Centrar el texto */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: #04d9d9;
     margin-left: 15px;
 }
 
 .header-right h4 {
-    margin: 0 0 10px 0; /* Espacio debajo del texto */
-    line-height: 1.2; /* Ajustar la altura de línea para separar las líneas del texto */
+    margin: 0 0 10px 0;
+    line-height: 1.2;
 }
 
 .header-ig-image {
@@ -68,11 +67,10 @@ nav ul li a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 40px; 
-    height: 40px; 
-    text-decoration: none; 
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
 }
-
 
 .header-ig-image img {
     display: none;
@@ -84,16 +82,17 @@ nav ul li a {
     align-items: flex-start;
     width: 80%;
     margin: 40px auto;
-    color:#04d9d9;
+    color: #04d9d9;
 }
 
 .text-section {
     width: 50%;
 }
-.text-section h2{
-    margin: 0 0 20px 0;
 
+.text-section h2 {
+    margin: 0 0 20px 0;
 }
+
 .text-section h1 {
     margin: 0 0 20px 0;
 }
@@ -121,15 +120,26 @@ nav ul li a {
     text-align: center;
     line-height: normal;
 }
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     width: 45%;
 }
 
-.image-grid img {
+.image-item {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.image-item img {
     width: 100%;
     height: auto;
-    animation: moveImage 2s ease-in-out infinite alternate;
+}
+
+.image-item label, .image-item input {
+    display: block;
+    margin-top: 10px;
+    color:#000000;
 }

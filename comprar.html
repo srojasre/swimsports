@@ -40,21 +40,54 @@
             <h2>2. Escoge la cantidad</h2>
             <h2>3. Verifica tu elección</h2>
             <h2>Dale Click en el boton siguiente</h2>
-            <p>Este botón te llevará al Whatsapp de un integrante de la familia Swam Sports, para que puedas resolver cualquier duda que tengas. y realizar tu compra.</p>
+            <p>Este botón te llevará al Whatsapp de un integrante de la familia Swam Sports, para que puedas resolver cualquier duda que tengas y realizar tu compra.</p>
             <div class="buttons">
-                <a href="https://wa.me/573023808867/?text=Hola%20quisiera%20comprar%20%7Bgorro%7D%20%7Bunidades%7D%20unidades" class="btn-comprar">COMPRAR</a>
+                <button id="comprarBtn" class="btn-comprar">COMPRAR</button>
             </div>
-            
         </div>
         <div class="image-grid">
-            <img src="images/swimcapb1.png" alt="Imagen 1">
-            <img src="images/swimcapb2.png" alt="Imagen 2">
-            <img src="images/swimcapf1.png" alt="Imagen 3">
-            <img src="images/swimcapk1.png" alt="Imagen 4">
+            <div class="image-item">
+                <img src="images/swimcapb1.png" alt="Imagen 1" data-name="Gorro Un Verano Sin Ti">
+                <label for="quantity1">Cantidad:</label>
+                <input type="number" id="quantity1" name="quantity1" min="0" max="99" value="0">
+            </div>
+            <div class="image-item">
+                <img src="images/swimcapb2.png" alt="Imagen 2" data-name="Gorro X 100PRE">
+                <label for="quantity2">Cantidad:</label>
+                <input type="number" id="quantity2" name="quantity2" min="0" max="99" value="0">
+            </div>
+            <div class="image-item">
+                <img src="images/swimcapf1.png" alt="Imagen 3" data-name="Gorro El FERXXO">
+                <label for="quantity3">Cantidad:</label>
+                <input type="number" id="quantity3" name="quantity3" min="0" max="99" value="0">
+            </div>
+            <div class="image-item">
+                <img src="images/swimcapk1.png" alt="Imagen 4" data-name="Gorro Mañana Será Bonito">
+                <label for="quantity4">Cantidad:</label>
+                <input type="number" id="quantity4" name="quantity4" min="0" max="99" value="0">
+            </div>
         </div>
-        
     </main>
+
+    <script>
+        document.getElementById('comprarBtn').addEventListener('click', function() {
+            const items = document.querySelectorAll('.image-item');
+            let message = 'Hola, quisiera comprar los siguientes gorros:\n';
+
+            items.forEach((item, index) => {
+                const img = item.querySelector('img');
+                const quantityInput = item.querySelector('input[type="number"]');
+                const quantity = quantityInput.value;
+                const name = img.getAttribute('data-name');
+
+                if (quantity > 0) {
+                    message += `${name}: ${quantity} unidades\n`;
+                }
+            });
+
+            const whatsappLink = `https://wa.me/573023808867/?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
+        });
+    </script>
 </body>
-
-
 </html>
