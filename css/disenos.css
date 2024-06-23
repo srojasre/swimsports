@@ -223,4 +223,12 @@ nav ul li a {
         width: 80%;
         margin: 20px auto;
     }
+    .carousel-controls button{
+        color: #000000;
+
+    }
+    .carousel-item h2 {
+        color: #04d9d9;
+        text-align: center;
+    }
 }
