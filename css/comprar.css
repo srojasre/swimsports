@@ -20,6 +20,7 @@ header {
     margin: 0 auto;
     color: #04d9d9;
     font-weight: bold;
+    font-size: 25px;
 }
 .header-container a:hover{
     color: #ffffff;
@@ -87,6 +88,7 @@ nav ul li a {
     width: 80%;
     margin: 40px auto;
     color: #04d9d9;
+    font-size: 30px;
 }
 
 .text-section {
