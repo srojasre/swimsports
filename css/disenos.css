@@ -57,9 +57,23 @@ nav ul li a {
     line-height: 1.2;
 }
 
+.header-ig-image {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-image: url("ig-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px; 
+    height: 40px; 
+    text-decoration: none; 
+}
+
+
 .header-ig-image img {
-    width: 30px;
-    height: auto;
+    display: none;
 }
 
 .main-content {
@@ -91,15 +105,19 @@ nav ul li a {
     color: #000000;
 }
 
-.carousel-item button {
-    padding: 15px 10px;
+.btn-comprar {
+    display: inline-block;
+    padding: 15px 30px;
     background-color: #04d9d9;
-    border: none;
     color: #f20c36;
-    cursor: pointer;
     font-size: 14px;
     font-weight: bold;
+    border: none;
     border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: normal;
 }
 
 .carousel-controls {
