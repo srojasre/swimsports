@@ -185,6 +185,7 @@ nav ul li a {
     background-color: #04d9d9; 
     transition: background-color 0.5s ease;
 }
+
 @media (max-width: 768px) {
     /* Header */
     .header-container {

@@ -20,6 +20,7 @@ header {
     margin: 0 auto;
     color: #04d9d9;
     font-weight: bold;
+    font-size: 25px;
 }
 .header-container a:hover{
     color: #ffffff;
@@ -88,6 +89,7 @@ nav ul li a {
     width: 80%;
     margin: 40px auto;
     color:#04d9d9;
+    font-size: 30px;
 }
 
 .text-section {
@@ -97,12 +99,21 @@ nav ul li a {
     margin: 0 0 20px 0;
 
 }
+.text-section h2:hover{
+    color: red;
+}
 .text-section h1 {
     margin: 0 0 20px 0;
+}
+.text-section h1:hover{
+    color: #ec99b0;
 }
 
 .text-section p {
     margin: 0 0 20px 0;
+}
+.text-section p:hover{
+    color: #8bc340;
 }
 
 .buttons {
@@ -115,7 +126,7 @@ nav ul li a {
     padding: 15px 30px;
     background-color: #04d9d9;
     color: #000000;
-    font-size: 14px;
+    font-size: 30px;
     font-weight: bold;
     border: none;
     border-radius: 15px;
@@ -123,6 +134,11 @@ nav ul li a {
     cursor: pointer;
     text-align: center;
     line-height: normal;
+
+}
+.btn-comprar:hover{
+    background-color: #ffffff;
+    color: red;
 }
 
 .image-grid {
@@ -140,10 +156,10 @@ nav ul li a {
 
 @keyframes moveImage {
     0% {
-        transform: translateX(0);
+        transform: rotate(0);
     }
     100% {
-        transform: translateX(10px);
+        transform: rotate(360deg);
     }
 }
 
