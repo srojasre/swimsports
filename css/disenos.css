@@ -120,10 +120,21 @@ nav ul li a {
     text-align: center;
 }
 
-.video-left, .video-right {
+.video-left{
     width: 25%;
     height: 40%;
     border: hidden;
+
+}
+.video-right{
+    width: 25%;
+    height: 40%;
+    border: hidden;
+
+}
+.photo-right{
+    width: 18%;
+    
 
 }
 
