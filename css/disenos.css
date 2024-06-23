@@ -122,7 +122,8 @@ nav ul li a {
 
 .video-left, .video-right {
     width: 25%;
-    height: auto;
+    height: 40%;
+    border: hidden;
 
 }
 
