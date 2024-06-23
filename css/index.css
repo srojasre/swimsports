@@ -148,26 +148,41 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+    /* Cambiar disposición a columnas */
     .header-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center; /* Centrar elementos del header */
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 10px; /* Espacio entre enlaces de navegación */
+        text-align: center; /* Centrar enlaces de navegación */
     }
 
     .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section, .image-grid, .buttons {
         width: 100%;
-        margin: 20px auto;
     }
 
     .text-section {
-        width: 100%;
+        order: 1;
     }
 
     .image-grid {
-        grid-template-columns: 1fr;
+        order: 2;
+        grid-template-columns: 1fr; /* Una columna en móviles */
+        margin-top: 20px; /* Añade un margen superior para el espaciado */
+    }
+
+    .buttons {
+        order: 3;
+        width: 100%;
+        margin-top: 20px; /* Añade un margen superior para el espaciado */
+        justify-content: center; /* Centra los botones */
     }
 }
