@@ -83,13 +83,13 @@
 
         if (quantity > 0) {
             message += `${name}: ${quantity} unidades\n`;
-            hasSelection = true; // Indica que hay al menos una cantidad seleccionada
+            hasSelection = true; 
         }
     });
 
     if (!hasSelection) {
         alert("Seleccione al menos 1 unidad para continuar");
-        return; // Detiene la ejecución si no hay selección
+        return; 
     }
 
     const whatsappLink = `https://wa.me/573023808867/?text=${encodeURIComponent(message)}`;

@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const h2Element = currentItem.querySelector('h2');
         const newColor = h2Element.getAttribute('data-color');
         h2Element.style.color = newColor;
+
+        // Actualizar el color de la parte correspondiente de la barra
+        const colorBars = document.querySelectorAll('.color-bar .segment');
+        colorBars.forEach((bar, index) => {
+            if (index === currentIndex) {
+                bar.style.backgroundColor = newColor;
+            } else {
+                bar.style.backgroundColor = '#04d9d9'; // Color base
+            }
+        });
     }
 
     nextButton.addEventListener('click', () => {

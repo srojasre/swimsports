@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat';
-    margin: 0;
+Margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #000000;
@@ -19,6 +19,10 @@ header {
     align-items: center;
     width: 80%;
     margin: 0 auto;
+}
+
+.header-container a:hover {
+    color: #ffffff;
 }
 
 .logo img {
@@ -71,31 +75,41 @@ nav ul li a {
     text-decoration: none; 
 }
 
-
 .header-ig-image img {
     display: none;
 }
 
 .main-content {
-    width: 80%;
+    width: 90%;
     margin: 40px auto;
     position: relative;
     text-align: center;
+    
 }
 
 .carousel {
     display: flex;
     overflow: hidden;
     width: 100%;
+    position: relative;
 }
 
 .carousel-item {
     min-width: 100%;
     transition: transform 0.5s ease;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-.carousel-item img{
-    max-width: 25%;
+
+.carousel-content {
+    text-align: center;
+    width: 45%;
+}
+
+.carousel-item img {
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -103,6 +117,13 @@ nav ul li a {
 
 .carousel-item h2 {
     color: #000000;
+    text-align: center;
+}
+
+.video-left, .video-right {
+    width: 25%;
+    height: auto;
+
 }
 
 .btn-comprar {
@@ -122,7 +143,7 @@ nav ul li a {
 
 .carousel-controls {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -139,4 +160,16 @@ nav ul li a {
 
 .carousel-controls button:hover {
     color: #f1f1f1;
+}
+
+.color-bar {
+    display: flex;
+    height: 5px;
+    margin-top: 40px;
+}
+
+.color-bar .segment {
+    flex: 1;
+    background-color: #04d9d9; 
+    transition: background-color 0.5s ease;
 }

@@ -21,6 +21,9 @@ header {
     color: #04d9d9;
     font-weight: bold;
 }
+.header-container a:hover{
+    color: #ffffff;
+}
 
 
 .logo img {
