@@ -148,16 +148,16 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-    /* Cambiar disposición a columnas */
+    
     .header-container {
         flex-direction: column;
-        align-items: center; /* Centrar elementos del header */
+        align-items: center; 
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px; /* Espacio entre enlaces de navegación */
-        text-align: center; /* Centrar enlaces de navegación */
+        gap: 10px; 
+        text-align: center; 
     }
 
     .main-content {
@@ -175,14 +175,15 @@ nav ul li a {
 
     .image-grid {
         order: 2;
-        grid-template-columns: 1fr; /* Una columna en móviles */
-        margin-top: 20px; /* Añade un margen superior para el espaciado */
+        grid-template-columns: 1fr; 
+        margin-top: 20px;
     }
+
 
     .buttons {
         order: 3;
         width: 100%;
-        margin-top: 20px; /* Añade un margen superior para el espaciado */
-        justify-content: center; /* Centra los botones */
+        margin-top: 20px;
+        justify-content: center; 
     }
 }

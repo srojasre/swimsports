@@ -185,3 +185,40 @@ nav ul li a {
     background-color: #04d9d9; 
     transition: background-color 0.5s ease;
 }
+@media (max-width: 768px) {
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-content, .carousel-item img {
+        width: 80%;
+        margin-top: 20px; /* Añade margen superior para separar los elementos en móviles */
+    }
+
+    .video-right, .photo-right {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
