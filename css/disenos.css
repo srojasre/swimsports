@@ -66,6 +66,7 @@ nav ul li a {
     width: 80%;
     margin: 40px auto;
     position: relative;
+    text-align: center;
 }
 
 .carousel {
@@ -79,19 +80,26 @@ nav ul li a {
     transition: transform 0.5s ease;
     text-align: center;
 }
+.carousel-item img{
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 .carousel-item h2 {
-    color: data-color;
+    color: #000000;
 }
 
 .carousel-item button {
-    padding: 10px 20px;
+    padding: 15px 10px;
     background-color: #04d9d9;
     border: none;
-    color: #000000;
+    color: #f20c36;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 15px;
 }
 
 .carousel-controls {
@@ -112,5 +120,5 @@ nav ul li a {
 }
 
 .carousel-controls button:hover {
-    color: #04d9d9;
+    color: #f1f1f1;
 }
