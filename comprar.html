@@ -70,23 +70,30 @@
     </main>
 
     <script>
-        document.getElementById('comprarBtn').addEventListener('click', function() {
-            const items = document.querySelectorAll('.image-item');
-            let message = 'Hola, quisiera comprar los siguientes gorros:\n';
+       document.getElementById('comprarBtn').addEventListener('click', function() {
+    const items = document.querySelectorAll('.image-item');
+    let message = 'Hola, quisiera comprar los siguientes gorros:\n';
+    let hasSelection = false; // Flag para verificar al menos una selección
 
-            items.forEach((item, index) => {
-                const img = item.querySelector('img');
-                const quantityInput = item.querySelector('input[type="number"]');
-                const quantity = quantityInput.value;
-                const name = img.getAttribute('data-name');
+    items.forEach((item, index) => {
+        const img = item.querySelector('img');
+        const quantityInput = item.querySelector('input[type="number"]');
+        const quantity = quantityInput.value;
+        const name = img.getAttribute('data-name');
 
-                if (quantity > 0) {
-                    message += `${name}: ${quantity} unidades\n`;
-                }
-            });
+        if (quantity > 0) {
+            message += `${name}: ${quantity} unidades\n`;
+            hasSelection = true; // Indica que hay al menos una cantidad seleccionada
+        }
+    });
 
-            const whatsappLink = `https://wa.me/573023808867/?text=${encodeURIComponent(message)}`;
-            window.open(whatsappLink, '_blank');
+    if (!hasSelection) {
+        alert("Seleccione al menos 1 unidad para continuar");
+        return; // Detiene la ejecución si no hay selección
+    }
+
+    const whatsappLink = `https://wa.me/573023808867/?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
         });
     </script>
 </body>
