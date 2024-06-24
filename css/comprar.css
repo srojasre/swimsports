@@ -126,6 +126,14 @@ nav ul li a {
     text-align: center;
     line-height: normal;
 }
+.text-section h5{
+    font-size: 10px;
+}
+.text-section a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #03b6b6;
+}
 
 .image-grid {
     display: grid;
