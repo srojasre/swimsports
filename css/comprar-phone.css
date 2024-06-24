@@ -78,6 +78,14 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
 }
+.text-section h5{
+    font-size: 8px;
+}
+.text-section a{
+    color: #04d9d9;
+    font-size: 8px;
+    text-decoration: none;
+}
 
 .image-grid {
     display: grid;
