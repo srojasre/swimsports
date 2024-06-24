@@ -85,6 +85,7 @@ nav ul li a {
     margin: 40px auto;
     position: relative;
     text-align: center;
+    font-size: 20px;
     
 }
 
@@ -93,6 +94,7 @@ nav ul li a {
     overflow: hidden;
     width: 100%;
     position: relative;
+    left:3%;
 }
 
 .carousel-item {
@@ -107,8 +109,13 @@ nav ul li a {
 .carousel-content {
     text-align: center;
     width: 45%;
-}
 
+}
+.info-pr{
+    text-align: center; /* Centrar texto horizontalmente */
+    margin: 0 auto 20px; /* Asegurar que esté centrado y un poco separado del resto del contenido */
+    font-size: 30px;
+}
 .carousel-item img {
     max-width: 50%;
     height: auto;
@@ -161,6 +168,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+    
 }
 
 .carousel-controls button {
@@ -169,6 +177,7 @@ nav ul li a {
     color: #04d9d9;
     font-size: 24px;
     cursor: pointer;
+    
 }
 
 .carousel-controls button:hover {
