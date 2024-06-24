@@ -37,7 +37,17 @@ document.querySelectorAll('.input-container').forEach(container => {
         document.querySelectorAll('.image-item').forEach(item => {
             const quantityInput = item.querySelector('input[type="number"]');
             const quantity = parseInt(quantityInput.value);
-            totalPrice += quantity * 60000;
+
+            if (quantity == 2){
+                totalPrice =  110000
+            }
+            else if(quantity >= 3){
+                totalPrice += quantity * 60000  - 15000
+            }
+            else{
+                totalPrice += quantity * 60000;
+            }
+            
         });
         document.getElementById('totalPrice').innerText = `Total: $${totalPrice.toLocaleString()}`;
     };
