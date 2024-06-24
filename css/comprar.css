@@ -139,15 +139,72 @@ nav ul li a {
     color: rgb(255, 255, 255);
 }
 
+.image-item {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 2px solid #04d9d9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #121212;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+}
+
 .image-item img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-.image-item label, .image-item input {
+.image-item label {
     display: block;
     margin-top: 10px;
-    color:#000000;
+    color: #04d9d9;
+    font-size: 16px;
+}
+
+.image-item input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #04d9d9;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 5px;
+}
+
+.input-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-container button {
+    background-color: #04d9d9;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container button:hover {
+    background-color: #03b6b6;
+}
+
+.input-container input {
+    max-width: 50px;
 }
 
 @media (max-width: 768px) {
