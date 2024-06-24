@@ -160,6 +160,9 @@ nav ul li a {
     text-align: center;
     line-height: normal;
 }
+.btn-comprar:hover{
+    background-color: #f1f1f1;
+}
 
 .carousel-controls {
     position: absolute;
