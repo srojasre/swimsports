@@ -42,13 +42,13 @@ document.querySelectorAll('.input-container').forEach(container => {
                 totalPrice =  110000;
             }
             else if(quantity >= 3){
-                totalPrice += quantity * 60000  - 15000;
+                totalPrice += quantity * 50000;
             }
             else if(quantity < 0){
                 totalPrice = 0;
             }
             else{
-                totalPrice += quantity * 60000;
+                totalPrice += quantity * 65000;
             }
             
         });
