@@ -39,7 +39,7 @@ document.querySelectorAll('.input-container').forEach(container => {
             const quantity = parseInt(quantityInput.value);
 
             if (quantity == 2){
-                totalPrice =  110000;
+                totalPrice += quantity * 55000;
             }
             else if(quantity >= 3){
                 totalPrice += quantity * 50000;
