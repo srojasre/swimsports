@@ -22,7 +22,7 @@ document.getElementById('comprarBtn').addEventListener('click', function() {
         return;
     }
 
-    const whatsappLink = `https://wa.me/573023808867/?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/573173556846/?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
 });
 
