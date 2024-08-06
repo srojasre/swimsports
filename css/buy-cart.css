@@ -1,0 +1,128 @@
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+/* Estilos de la cabecera */
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #04d9d9;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header-container a:hover {
+    color: #ffffff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #04d9d9;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #04d9d9;
+    margin-left: 15px;
+}
+
+.header-right h4 {
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.header-ig-image {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-image: url("ig-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.header-ig-image img {
+    display: none;
+}
+
+/* Estilos específicos de la tabla */
+table {
+    color: #04d9d9; /* Azul claro */
+}
+
+thead {
+    background-color: #000000;
+    color: #04d9d9; /* Azul claro */
+    font-size: 20px;
+}
+
+.product-img {
+    width: 200px;
+    height: auto;
+}
+.container h2{
+    color: #04d9d9;
+
+}
+.container h3{
+    color: #04d9d9;
+}
+
+.cantidad-input {
+    background-color: #000000; /* Fondo negro */
+    color: #04d9d9; /* Texto azul claro */
+    border: none; /* Sin borde */
+}
+
+.precio-total {
+    background-color: #000000; /* Fondo negro */
+    color: #04d9d9; /* Texto azul claro */
+    padding: 5px; /* Espaciado interno para mejor apariencia */
+}
+
+.form-control {
+
+    background-color: #000000; /* Fondo negro */
+
+    color: #04d9d9; /* Texto azul claro */
+
+    border: none; /* Sin borde */
+
+}
